@@ -15,6 +15,5 @@ body {
   margin: 0;
   padding: 0;
   background: #0a2a43;
-  min-height: 1500px;
 }
 </style>
