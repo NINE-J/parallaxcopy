@@ -1,7 +1,7 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "df27d37b58c9bdcefab7",
-    "url": "/parallaxcopy/css/app.5c3fe3f0.css"
+    "revision": "01ec9d1fd650a5c23d49",
+    "url": "/parallaxcopy/css/app.567ebe92.css"
   },
   {
     "revision": "5df9840df4363b73ce1cdce2cf951683",
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/parallaxcopy/img/road.d9d4d414.png"
   },
   {
-    "revision": "e5ef3d150888c44d190e19bc4ba49199",
+    "revision": "c838439d90e0b091b8185eeb07cf5fda",
     "url": "/parallaxcopy/index.html"
   },
   {
@@ -28,8 +28,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/parallaxcopy/js/about.a22f2b7e.js"
   },
   {
-    "revision": "df27d37b58c9bdcefab7",
-    "url": "/parallaxcopy/js/app.63222fcc.js"
+    "revision": "01ec9d1fd650a5c23d49",
+    "url": "/parallaxcopy/js/app.b2b50906.js"
   },
   {
     "revision": "79ba59c9038d8ff16f53",
