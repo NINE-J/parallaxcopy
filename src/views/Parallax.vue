@@ -9,7 +9,7 @@
         <h2 id="text">Moon Light</h2>
       </div>
     </div>
-    <div class="description-wrapper">
+    <div class="description-wrapper" ref="descriptionWrapper">
       <div class="subtitle">
         <h2>parallax scrolling</h2>
         <span>[패럴랙스]</span>
@@ -25,6 +25,38 @@
           <div class="box"></div>
           <div class="box"></div>
           <div class="box"></div>
+        </div>
+      </div>
+    </div>
+    <div class="second-parallax" ref="secondParallax">
+      <div class="img-wrapper">
+        <img src="@/assets/p0.png" alt="p0" />
+        <img src="@/assets/p1.png" ref="p1" alt="p1" />
+        <img src="@/assets/p2.png" ref="p2" alt="p2" />
+        <img src="@/assets/p3.png" ref="p3" alt="p3" />
+        <img src="@/assets/p4.png" ref="p4" alt="p4" />
+        <img src="@/assets/p5.png" ref="p5" alt="p5" />
+        <div
+          style="
+            position: absolute;
+            bottom: 12rem;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+          "
+        >
+          <div
+            style="
+              width: 1px;
+              height: 100px;
+              background: #fff;
+              opacity: 0.4;
+              margin-bottom: 4rem;
+            "
+          ></div>
+          <p class="description">
+            이 페이지는 css와 javascript의 이해를 위해 제작된 페이지 입니다.
+          </p>
         </div>
       </div>
     </div>
@@ -48,6 +80,25 @@ export default {
       mountain.style.top = -value * 0.15 + 'px';
       road.style.top = value * 0.15 + 'px';
       textWrapper.style.top = value * 1 + 'px';
+    });
+
+    //second parallax
+    let descriptionWrapper = this.$refs.descriptionWrapper;
+    let p1 = this.$refs.p1;
+    let p2 = this.$refs.p2;
+    let p3 = this.$refs.p3;
+    let p4 = this.$refs.p4;
+    let p5 = this.$refs.p5;
+
+    window.addEventListener('scroll', function () {
+      let value = window.scrollY;
+      if (value < descriptionWrapper.offsetTop) return;
+
+      p1.style.top = (descriptionWrapper.offsetTop - value) * 0.15 + 'px';
+      p2.style.top = (descriptionWrapper.offsetTop - value) * 0.2 + 'px';
+      p3.style.top = (descriptionWrapper.offsetTop - value) * 0.3 + 'px';
+      p4.style.top = (descriptionWrapper.offsetTop - value) * 0.4 + 'px';
+      p5.style.top = (descriptionWrapper.offsetTop - value) * 0.8 + 'px';
     });
   }
 };
@@ -196,6 +247,31 @@ export default {
   }
 }
 
+.second-parallax {
+  position: relative;
+  width: 100%;
+
+  .img-wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding-top: 48%;
+    background: #000;
+
+    img {
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+  }
+
+  .description {
+    margin: 0;
+    color: #fff;
+    padding: 0 2rem;
+  }
+}
+
 @media (min-width: 1024px) {
   .img-wrapper {
     #text {
@@ -207,6 +283,13 @@ export default {
     .description {
       text-align: center;
       width: 40%;
+      padding: 0;
+    }
+  }
+
+  .second-parallax {
+    .description {
+      text-align: center;
       padding: 0;
     }
   }
