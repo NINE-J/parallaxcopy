@@ -1,7 +1,7 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "01ec9d1fd650a5c23d49",
-    "url": "/parallaxcopy/css/app.567ebe92.css"
+    "revision": "8e15b5fdd221a8f3e2a9",
+    "url": "/parallaxcopy/css/app.27d07c3b.css"
   },
   {
     "revision": "5df9840df4363b73ce1cdce2cf951683",
@@ -16,11 +16,35 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/parallaxcopy/img/mountain.ecd840aa.png"
   },
   {
+    "revision": "932b6bde5180c0fdb5c083c8fdcc735c",
+    "url": "/parallaxcopy/img/p0.932b6bde.png"
+  },
+  {
+    "revision": "1771f52bf6eb45ff175a8d9f6ac03acd",
+    "url": "/parallaxcopy/img/p1.1771f52b.png"
+  },
+  {
+    "revision": "0df948b5d70b705e2c8dc89649eb88ca",
+    "url": "/parallaxcopy/img/p2.0df948b5.png"
+  },
+  {
+    "revision": "ea7df827ab8fd84bb4a603f9b67445b7",
+    "url": "/parallaxcopy/img/p3.ea7df827.png"
+  },
+  {
+    "revision": "c37a70240b05a033e3006e1a4c07bc64",
+    "url": "/parallaxcopy/img/p4.c37a7024.png"
+  },
+  {
+    "revision": "310b7bd77e59d60f95dd7f3ec0a43425",
+    "url": "/parallaxcopy/img/p5.310b7bd7.png"
+  },
+  {
     "revision": "d9d4d4140463ac79b4a2511ef27b511a",
     "url": "/parallaxcopy/img/road.d9d4d414.png"
   },
   {
-    "revision": "c838439d90e0b091b8185eeb07cf5fda",
+    "revision": "119ea793b9092a74d149d2abf9c1e1c6",
     "url": "/parallaxcopy/index.html"
   },
   {
@@ -28,8 +52,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/parallaxcopy/js/about.a22f2b7e.js"
   },
   {
-    "revision": "01ec9d1fd650a5c23d49",
-    "url": "/parallaxcopy/js/app.b2b50906.js"
+    "revision": "8e15b5fdd221a8f3e2a9",
+    "url": "/parallaxcopy/js/app.56b16203.js"
   },
   {
     "revision": "79ba59c9038d8ff16f53",
