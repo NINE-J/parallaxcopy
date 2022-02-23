@@ -36,28 +36,28 @@
         <img src="@/assets/p3.png" ref="p3" alt="p3" />
         <img src="@/assets/p4.png" ref="p4" alt="p4" />
         <img src="@/assets/p5.png" ref="p5" alt="p5" />
+      </div>
+      <div
+        style="
+          display: flex;
+          flex-flow: column;
+          align-items: center;
+          background: #000;
+          padding-bottom: 10rem;
+        "
+      >
         <div
           style="
-            position: absolute;
-            bottom: 12rem;
-            display: flex;
-            flex-flow: column;
-            align-items: center;
+            width: 1px;
+            height: 100px;
+            background: #fff;
+            opacity: 0.4;
+            margin-bottom: 4rem;
           "
-        >
-          <div
-            style="
-              width: 1px;
-              height: 100px;
-              background: #fff;
-              opacity: 0.4;
-              margin-bottom: 4rem;
-            "
-          ></div>
-          <p class="description">
-            이 페이지는 css와 javascript의 이해를 위해 제작된 페이지 입니다.
-          </p>
-        </div>
+        ></div>
+        <p class="description">
+          이 페이지는 css와 javascript의 이해를 위해 제작된 페이지 입니다.
+        </p>
       </div>
     </div>
   </div>
@@ -98,7 +98,7 @@ export default {
       p2.style.top = (descriptionWrapper.offsetTop - value) * 0.2 + 'px';
       p3.style.top = (descriptionWrapper.offsetTop - value) * 0.3 + 'px';
       p4.style.top = (descriptionWrapper.offsetTop - value) * 0.4 + 'px';
-      p5.style.top = (descriptionWrapper.offsetTop - value) * 0.8 + 'px';
+      p5.style.top = (descriptionWrapper.offsetTop - value) * 0.6 + 'px';
     });
   }
 };
@@ -255,13 +255,13 @@ export default {
     overflow: hidden;
     position: relative;
     width: 100%;
-    padding-top: 48%;
+    padding-top: 40%;
     background: #000;
 
     img {
       position: absolute;
       top: 0;
-      width: 100%;
+      width: 200%;
     }
   }
 
@@ -291,6 +291,13 @@ export default {
     .description {
       text-align: center;
       padding: 0;
+    }
+    .img-wrapper {
+      padding-top: 36%;
+
+      img {
+        width: 120%;
+      }
     }
   }
 }
